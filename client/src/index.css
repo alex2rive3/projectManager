@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.contenedor{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 15px;
+  border: 2px solid black;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+}
+.columna{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-height: 450px;
+  gap: 5px;
+  overflow-y: scroll;
+  padding: 5px;
+}
+.start{
+  background-color: rgb(100, 100, 187);
+}
+.progres{
+  background-color: #ecbf42;
+}
+.complete{
+  background-color: rgb(120, 196, 142);
+}
+.start, .progres, .complete{
+  text-align: center;
+}
+
+.carta{
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border: 2px solid black;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.title>h1{
+  font-size: 60px;
+}
+.botonera{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  border: 2px solid black;
+  padding: 4px;
+
+}

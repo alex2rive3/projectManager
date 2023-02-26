@@ -1,10 +1,5 @@
 const { Proyecto } = require("../models/proyecto.model");
 
-module.exports.index = (request, response) => {
-    response.json({
-        message: "Hello World"
-    });
-}
 
 module.exports.createProyecto = async (request, response) => {
     try {

@@ -10,7 +10,7 @@ const ProyectoErrores = Yup.object().shape({
     date: Yup.string().required("El date es requerido."),
 });
 
-const AutorForm = ({ initialValues, botonTexto, onSubmit }) => {
+const ProyectoForm = ({ initialValues, onSubmit }) => {
     return (
         <Formik
             enableReinitialize={true}
@@ -50,7 +50,7 @@ const AutorForm = ({ initialValues, botonTexto, onSubmit }) => {
                         className="btn btn-primary m-2"
                         disabled={!(isValid && dirty)}
                     >
-                        {botonTexto} Autor
+                        Plan Project
                     </button>
                 </Form>
             )}
@@ -58,4 +58,4 @@ const AutorForm = ({ initialValues, botonTexto, onSubmit }) => {
     );
 };
 
-export default AutorForm;
+export default ProyectoForm;

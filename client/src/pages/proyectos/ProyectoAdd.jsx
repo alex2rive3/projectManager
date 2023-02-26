@@ -44,7 +44,6 @@ const ProyectoAdd = () => {
                 <div className="col-lg-4 col-sm-12 col-md-6">
                     <ProyectoForm
                         initialValues={initialValues}
-                        botonTexto="Agregar"
                         onSubmit={crearProyecto}
                     />
                 </div>
